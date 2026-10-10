@@ -3,79 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Executive Journal — Curated Intelligence & Strategic Briefings</title>
+  <title>Daily Planner & Executive Journal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;0,900;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-page: #fdfaf6;
+      --bg-page: #fcf6f7;
       --bg-card: #ffffff;
-      --bg-card-subtle: #fff5f7;
-      --bg-sidebar: #faf4ed;
-      --border-soft: #f0e1e6;
-      --border-accent: #e2b4bd;
-      --border-dark: #3e273b;
-      --text-main: #2d1a29;
-      --text-muted: #6e5568;
-      --rose-primary: #d9778f;
-      --rose-deep: #b54a67;
-      --lavender-soft: #e5dbff;
-      --lavender-accent: #9d80cb;
-      --blush-accent: #ffccd5;
-      --cream-tag: #fae8eb;
-      --matcha-subtle: #e9f5ec;
-      --gold-sparkle: #dfb15b;
-      --shadow-soft: 0 8px 24px rgba(181, 74, 103, 0.08);
-      --shadow-hover: 0 14px 32px rgba(181, 74, 103, 0.16);
-      --font-masthead: 'Playfair Display', serif;
-      --font-editorial: 'Cormorant Garamond', serif;
+      --bg-soft-pink: #fff0f4;
+      --bg-banner: #fae4eb;
+      --border-pink: #eed3dc;
+      --border-accent: #e2a8b8;
+      --border-bow: #d47895;
+      --text-main: #331f2b;
+      --text-muted: #735366;
+      --rose-accent: #c84b71;
+      --rose-deep: #a53255;
+      --rose-light: #ffdce5;
+      --sky-soft: #eaf3fa;
+      --lavender-soft: #f1ecfa;
+      --shadow-soft: 0 8px 24px rgba(200, 75, 113, 0.07);
+      --shadow-hover: 0 14px 34px rgba(200, 75, 113, 0.14);
+      --font-cursive: 'Great Vibes', cursive;
+      --font-editorial: 'Newsreader', serif;
+      --font-headline: 'Playfair Display', serif;
       --font-sans: 'Plus Jakarta Sans', sans-serif;
       --font-hand: 'Caveat', cursive;
     }
 
     [data-theme="noir"] {
-      --bg-page: #151019;
-      --bg-card: #1f1725;
-      --bg-card-subtle: #291f31;
-      --bg-sidebar: #1a1320;
-      --border-soft: #382740;
-      --border-accent: #7a4e6f;
-      --border-dark: #d9778f;
-      --text-main: #fbebf1;
-      --text-muted: #b99fb3;
-      --rose-primary: #ff85a1;
-      --rose-deep: #ff477e;
-      --lavender-soft: #3b2c4d;
-      --lavender-accent: #c4a1e8;
-      --blush-accent: #4d2d3e;
-      --cream-tag: #2f1f33;
-      --matcha-subtle: #1e2c22;
-      --gold-sparkle: #f3c969;
-      --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.45);
-      --shadow-hover: 0 14px 36px rgba(255, 133, 161, 0.15);
-    }
-
-    [data-theme="matcha"] {
-      --bg-page: #f7f9f5;
-      --bg-card: #ffffff;
-      --bg-card-subtle: #f0f6ee;
-      --bg-sidebar: #eef3ea;
-      --border-soft: #dbe7d7;
-      --border-accent: #97ba8c;
-      --border-dark: #2d3e2a;
-      --text-main: #1f2d1d;
-      --text-muted: #536b50;
-      --rose-primary: #4a7c59;
-      --rose-deep: #31572c;
-      --lavender-soft: #e8ede4;
-      --lavender-accent: #6b8f71;
-      --blush-accent: #c7d9b7;
-      --cream-tag: #e5ede0;
-      --matcha-subtle: #edf4e8;
-      --gold-sparkle: #c29547;
-      --shadow-soft: 0 8px 24px rgba(49, 87, 44, 0.08);
-      --shadow-hover: 0 14px 32px rgba(49, 87, 44, 0.15);
+      --bg-page: #151119;
+      --bg-card: #1f1825;
+      --bg-soft-pink: #2a1c2e;
+      --bg-banner: #241627;
+      --border-pink: #442a4a;
+      --border-accent: #79436e;
+      --border-bow: #e06d94;
+      --text-main: #fdeef3;
+      --text-muted: #bfa1b5;
+      --rose-accent: #ff7597;
+      --rose-deep: #ff4d79;
+      --rose-light: #442036;
+      --sky-soft: #1d2533;
+      --lavender-soft: #271f36;
+      --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.5);
+      --shadow-hover: 0 14px 36px rgba(255, 117, 151, 0.2);
     }
 
     * {
@@ -87,380 +60,512 @@
     body {
       background-color: var(--bg-page);
       color: var(--text-main);
-      font-family: var(--font-editorial);
-      font-size: 19px;
-      line-height: 1.6;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      padding-bottom: 90px;
+      font-family: var(--font-sans);
+      font-size: 14px;
+      line-height: 1.5;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 24px 16px 80px 16px;
     }
 
-    .container {
-      max-width: 1320px;
+    .planner-wrapper {
+      max-width: 1440px;
       margin: 0 auto;
-      padding: 0 24px;
+      background: var(--bg-card);
+      border: 2px solid var(--border-pink);
+      border-radius: 28px;
+      padding: 32px 36px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
     }
 
-    /* Chic Top Banner */
-    .top-journal-bar {
+    /* Cute Corner Sakura Flourishes */
+    .sakura-corner-tl {
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      font-size: 26px;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+    .sakura-corner-tr {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      font-size: 26px;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    /* Top Cute Utility Nav */
+    .planner-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 14px 0;
-      border-bottom: 1px dashed var(--border-accent);
-      font-family: var(--font-sans);
-      font-size: 13px;
-      font-weight: 600;
+      margin-bottom: 24px;
+      font-size: 12px;
+      font-weight: 700;
       color: var(--text-muted);
     }
 
-    .status-badge {
+    .status-pill {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--cream-tag);
-      padding: 5px 12px;
+      background: var(--bg-soft-pink);
+      border: 1px solid var(--border-pink);
+      padding: 6px 14px;
       border-radius: 20px;
-      border: 1px solid var(--border-soft);
-      font-size: 12px;
+      color: var(--rose-deep);
     }
 
     .sparkle-dot {
       width: 7px;
       height: 7px;
-      background: var(--rose-primary);
+      background: var(--rose-accent);
       border-radius: 50%;
-      box-shadow: 0 0 8px var(--rose-primary);
-      animation: pulseSparkle 2s infinite ease-in-out;
+      box-shadow: 0 0 8px var(--rose-accent);
+      animation: pulse 1.8s infinite;
     }
 
-    @keyframes pulseSparkle {
+    @keyframes pulse {
       0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.4); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 0.6; }
     }
 
-    .top-actions {
+    .nav-buttons {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
-    .btn-chic {
+    .btn-pill {
       background: var(--bg-card);
-      border: 1px solid var(--border-accent);
+      border: 1px solid var(--border-pink);
       color: var(--text-main);
-      padding: 6px 16px;
-      border-radius: 24px;
-      font-family: var(--font-sans);
+      padding: 6px 14px;
+      border-radius: 20px;
       font-size: 12px;
       font-weight: 700;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.25s ease;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      transition: all 0.2s;
     }
 
-    .btn-chic:hover {
-      background: var(--rose-primary);
-      color: #ffffff;
-      border-color: var(--rose-primary);
+    .btn-pill:hover {
+      background: var(--rose-accent);
+      color: #fff;
+      border-color: var(--rose-accent);
       transform: translateY(-1px);
     }
 
-    /* Journal Masthead */
-    .masthead-journal {
+    /* Planner Masthead matching image_2ed9b9.jpg */
+    .planner-masthead {
       text-align: center;
-      padding: 34px 0 20px 0;
+      margin-bottom: 28px;
       position: relative;
     }
 
-    .masthead-ribbon {
+    .planner-title-row {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      font-family: var(--font-sans);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: 800;
-      color: var(--rose-deep);
-      background: var(--cream-tag);
-      padding: 4px 16px;
-      border-radius: 20px;
-      border: 1px solid var(--border-soft);
-      margin-bottom: 12px;
-    }
-
-    .masthead-journal h1 {
-      font-family: var(--font-masthead);
-      font-size: clamp(38px, 6vw, 68px);
-      font-weight: 800;
-      line-height: 1.08;
-      letter-spacing: -0.5px;
-      color: var(--text-main);
-    }
-
-    .masthead-subline {
-      font-family: var(--font-hand);
-      font-size: 26px;
-      color: var(--rose-deep);
-      margin-top: 4px;
-      font-weight: 700;
-    }
-
-    .masthead-dates-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid var(--border-accent);
-      border-bottom: 1px solid var(--border-accent);
-      padding: 10px 18px;
-      margin-top: 18px;
-      font-family: var(--font-sans);
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      background: var(--bg-card-subtle);
-      border-radius: 6px;
-    }
-
-    /* Controls: Filter Ribbons & Search */
-    .controls-journal {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
       gap: 16px;
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .planner-title {
+      font-family: var(--font-cursive);
+      font-size: clamp(52px, 8vw, 84px);
+      color: var(--rose-accent);
+      line-height: 1;
+      font-weight: 400;
+      text-shadow: 1px 2px 4px rgba(200, 75, 113, 0.15);
+    }
+
+    .puffy-heart-bow {
+      font-size: 38px;
+      display: inline-block;
+      animation: floatBow 3s ease-in-out infinite;
+    }
+
+    @keyframes floatBow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .planner-subhead {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 800;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Interactive Planner Dashboard Bar (Mood, Date, Weather, Water) */
+    .planner-dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr 1fr;
+      gap: 16px;
       margin-bottom: 28px;
     }
 
-    .pill-carousel {
+    @media (max-width: 900px) {
+      .planner-dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .dash-box {
+      background: var(--bg-soft-pink);
+      border: 1.5px solid var(--border-pink);
+      border-radius: 18px;
+      padding: 14px 18px;
+      position: relative;
+    }
+
+    .dash-box-bow {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+    }
+
+    .dash-box-label {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--rose-deep);
+      margin-bottom: 8px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* Mood Selector */
+    .mood-selector {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .mood-item {
+      transition: transform 0.2s;
+      border-radius: 50%;
+      padding: 4px;
+    }
+
+    .mood-item:hover, .mood-item.active {
+      transform: scale(1.3);
+      filter: drop-shadow(0 2px 6px rgba(200, 75, 113, 0.4));
+    }
+
+    /* Date & Week Days */
+    .date-day-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .current-date-text {
+      font-family: var(--font-headline);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .day-pills {
+      display: flex;
+      gap: 6px;
+    }
+
+    .day-pill {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-pink);
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 800;
+      background: var(--bg-card);
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    .day-pill.active {
+      background: var(--rose-accent);
+      color: #fff;
+      border-color: var(--rose-accent);
+    }
+
+    /* Weather & Water Combined */
+    .weather-water-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .weather-icons {
+      display: flex;
+      gap: 8px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .weather-item.active {
+      transform: scale(1.25);
+    }
+
+    .water-drops {
+      display: flex;
+      gap: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .water-drop.filled {
+      filter: drop-shadow(0 0 3px #3a86ff);
+    }
+
+    /* Daily Strategic Intention / Cloud Banner */
+    .daily-reflection-banner {
+      background: linear-gradient(135deg, #f7d6e0 0%, #d8bbff 50%, #c8e7ff 100%);
+      border-radius: 16px;
+      padding: 14px 22px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-pink);
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.6);
+    }
+
+    [data-theme="noir"] .daily-reflection-banner {
+      background: linear-gradient(135deg, #3d1c2d 0%, #2a1f42 50%, #17283c 100%);
+    }
+
+    .reflection-quote {
+      font-family: var(--font-editorial);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-sync-sheet {
+      background: #ffffff;
+      border: 1px solid var(--border-pink);
+      color: var(--rose-deep);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: all 0.2s;
+    }
+
+    .btn-sync-sheet:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(200, 75, 113, 0.2);
+    }
+
+    /* Category Ribbons Bar */
+    .category-ribbons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+      padding-bottom: 18px;
+      border-bottom: 1.5px dashed var(--border-pink);
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ribbon-pills {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
     }
 
-    .filter-bow {
+    .filter-ribbon {
       font-family: var(--font-sans);
       font-size: 12px;
       font-weight: 700;
-      background: var(--bg-card);
-      border: 1px solid var(--border-soft);
+      background: var(--bg-soft-pink);
+      border: 1px solid var(--border-pink);
       color: var(--text-muted);
-      padding: 7px 16px;
-      border-radius: 24px;
+      padding: 6px 14px;
+      border-radius: 20px;
       cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      transition: all 0.2s;
     }
 
-    .filter-bow:hover, .filter-bow.active {
-      background: var(--rose-primary);
-      color: #ffffff;
-      border-color: var(--rose-primary);
-      box-shadow: 0 4px 12px rgba(217, 119, 143, 0.35);
+    .filter-ribbon:hover, .filter-ribbon.active {
+      background: var(--rose-accent);
+      color: #fff;
+      border-color: var(--rose-accent);
+      box-shadow: 0 4px 12px rgba(200, 75, 113, 0.25);
       transform: translateY(-1px);
     }
 
-    .search-chic {
-      position: relative;
-      min-width: 280px;
-    }
-
-    .search-chic input {
-      width: 100%;
+    .search-input-box input {
       background: var(--bg-card);
-      border: 1px solid var(--border-accent);
-      padding: 9px 14px 9px 36px;
-      border-radius: 24px;
+      border: 1.5px solid var(--border-pink);
+      padding: 8px 14px 8px 34px;
+      border-radius: 20px;
       font-family: var(--font-sans);
-      font-size: 13px;
+      font-size: 12px;
       color: var(--text-main);
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.04);
       outline: none;
-      transition: border-color 0.2s;
+      width: 240px;
     }
 
-    .search-chic input:focus {
-      border-color: var(--rose-deep);
-      box-shadow: 0 0 0 3px rgba(217, 119, 143, 0.2);
+    .search-input-box input:focus {
+      border-color: var(--rose-accent);
+      box-shadow: 0 0 0 3px rgba(200, 75, 113, 0.15);
     }
 
-    .search-chic .search-icon {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 14px;
-      opacity: 0.6;
-    }
-
-    /* Main Journal Layout */
-    .journal-layout {
+    /* ============================================================== */
+    /* 3 IN A ROW GRID LAYOUT (Strict User Requirement)              */
+    /* ============================================================== */
+    .planner-cards-grid {
       display: grid;
-      grid-template-columns: 2.3fr 1.1fr;
-      gap: 36px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      align-items: stretch;
     }
 
-    @media (max-width: 1024px) {
-      .journal-layout {
+    @media (max-width: 1180px) {
+      .planner-cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
+      .planner-cards-grid {
         grid-template-columns: 1fr;
       }
     }
 
-    /* Lead Story Hero Entry */
-    .lead-journal-card {
+    /* Card Styling precisely matched to image_2ed93b.jpg & image_2ed9b9.jpg */
+    .journal-entry-card {
       background: var(--bg-card);
-      border: 1px solid var(--border-accent);
-      border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 32px;
-      box-shadow: var(--shadow-soft);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .lead-journal-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 6px;
-      background: linear-gradient(90deg, var(--rose-primary), var(--lavender-accent), var(--gold-sparkle));
-    }
-
-    .lead-meta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-      font-family: var(--font-sans);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .badge-ribbon {
-      background: var(--cream-tag);
-      color: var(--rose-deep);
-      border: 1px solid var(--border-soft);
-      padding: 4px 12px;
+      border: 1.5px solid var(--border-pink);
       border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
-
-    .lead-title {
-      font-family: var(--font-masthead);
-      font-size: clamp(26px, 3.8vw, 40px);
-      line-height: 1.18;
-      font-weight: 800;
-      color: var(--text-main);
-      margin-bottom: 20px;
-    }
-
-    /* Cards Grid */
-    .stories-feed {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 26px;
-    }
-
-    .story-journal-entry {
-      background: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      border-radius: 14px;
       padding: 24px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: var(--shadow-soft);
+      box-shadow: 0 4px 16px rgba(200, 75, 113, 0.05);
       transition: all 0.25s ease;
       position: relative;
     }
 
-    .story-journal-entry:hover {
-      transform: translateY(-3px);
+    .journal-entry-card:hover {
+      transform: translateY(-4px);
       box-shadow: var(--shadow-hover);
       border-color: var(--border-accent);
     }
 
-    .entry-header {
+    .card-top-bow {
+      position: absolute;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 17px;
+      filter: drop-shadow(0 2px 4px rgba(200, 75, 113, 0.2));
+    }
+
+    .card-meta-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
-      font-family: var(--font-sans);
+      margin-bottom: 14px;
+    }
+
+    .category-badge-chip {
+      background: var(--bg-soft-pink);
+      color: var(--rose-deep);
+      border: 1px solid var(--border-pink);
+      padding: 4px 11px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .card-read-time {
       font-size: 11px;
       font-weight: 700;
-    }
-
-    .entry-badge {
-      background: var(--cream-tag);
-      color: var(--rose-deep);
-      padding: 3px 10px;
-      border-radius: 12px;
-      border: 1px solid var(--border-soft);
-    }
-
-    .entry-readtime {
       color: var(--text-muted);
     }
 
-    .entry-headline {
-      font-family: var(--font-masthead);
-      font-size: 22px;
+    .card-headline-title {
+      font-family: var(--font-headline);
+      font-size: 20px;
       line-height: 1.25;
       font-weight: 700;
       color: var(--text-main);
       margin-bottom: 16px;
     }
 
-    /* THE 3 MANDATORY SECTIONS WITH POLISHED CORPORATE STYLING */
+    /* 3 MANDATORY SECTIONS WITH POLISHED CORPORATE REFINEMENT */
 
-    /* Section 1: In Short */
+    /* 1. IN SHORT */
     .box-in-short {
-      background: var(--bg-card-subtle);
-      border-left: 3px solid var(--rose-primary);
-      padding: 12px 16px;
-      border-radius: 0 10px 10px 0;
-      margin-bottom: 16px;
-      font-family: var(--font-sans);
+      background: var(--bg-soft-pink);
+      border-left: 3px solid var(--rose-accent);
+      padding: 12px 14px;
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 14px;
       font-size: 13.5px;
-      line-height: 1.55;
+      line-height: 1.5;
       color: var(--text-main);
     }
 
     .label-in-short {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       font-size: 11px;
       font-weight: 800;
-      letter-spacing: 1px;
       text-transform: uppercase;
+      letter-spacing: 0.8px;
       color: var(--rose-deep);
       margin-bottom: 4px;
     }
 
-    /* Section 2: In Detail Breakdown */
+    /* 2. IN DETAIL BREAKDOWN */
     .box-in-detail {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
-    .detail-accordion-btn {
+    .accordion-toggle-btn {
       width: 100%;
       background: var(--bg-card);
-      border: 1px solid var(--border-soft);
-      padding: 8px 14px;
-      border-radius: 8px;
+      border: 1px solid var(--border-pink);
+      padding: 8px 12px;
+      border-radius: 10px;
       font-family: var(--font-sans);
       font-size: 12px;
       font-weight: 700;
@@ -472,182 +577,134 @@
       transition: all 0.2s;
     }
 
-    .detail-accordion-btn:hover {
-      background: var(--cream-tag);
+    .accordion-toggle-btn:hover {
+      background: var(--bg-soft-pink);
       color: var(--rose-deep);
       border-color: var(--border-accent);
     }
 
-    .detail-body {
+    .accordion-content {
       display: none;
-      padding: 14px 4px 4px 4px;
+      padding: 12px 2px 2px 2px;
       font-family: var(--font-editorial);
-      font-size: 17.5px;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.55;
       color: var(--text-main);
       white-space: pre-line;
-      border-top: 1px dashed var(--border-soft);
-      margin-top: 10px;
+      border-top: 1px dashed var(--border-pink);
+      margin-top: 8px;
     }
 
-    .detail-body.open {
+    .accordion-content.open {
       display: block;
     }
 
-    /* Section 3: Links */
-    .box-links {
-      border-top: 1px solid var(--border-soft);
-      padding-top: 14px;
+    /* 3. TECHNICAL SOURCES / LINKS */
+    .box-sources-links {
+      border-top: 1px solid var(--border-pink);
+      padding-top: 12px;
       margin-top: auto;
     }
 
-    .label-links {
-      font-family: var(--font-sans);
+    .sources-title {
       font-size: 10.5px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       color: var(--text-muted);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
     }
 
-    .links-chip-group {
+    .links-capsule-row {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
     }
 
-    .link-capsule {
-      font-family: var(--font-sans);
+    .source-capsule-link {
       font-size: 11px;
       font-weight: 700;
       color: var(--rose-deep);
-      background: var(--cream-tag);
-      border: 1px solid var(--border-soft);
-      padding: 5px 11px;
+      background: var(--bg-soft-pink);
+      border: 1px solid var(--border-pink);
+      padding: 4px 10px;
       border-radius: 16px;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 5px;
+      gap: 4px;
       transition: all 0.2s;
     }
 
-    .link-capsule:hover {
-      background: var(--rose-primary);
-      color: #ffffff;
-      border-color: var(--rose-primary);
+    .source-capsule-link:hover {
+      background: var(--rose-accent);
+      color: #fff;
+      border-color: var(--rose-accent);
       transform: translateY(-1px);
     }
 
-    /* Chic Sidebar */
-    .journal-sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-    }
-
-    .polaroid-widget {
-      background: var(--bg-card);
-      border: 1px solid var(--border-accent);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: var(--shadow-soft);
-      position: relative;
-    }
-
-    .washi-tape {
-      position: absolute;
-      top: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 110px;
-      height: 22px;
-      background: rgba(226, 180, 189, 0.45);
-      border: 1px dashed rgba(217, 119, 143, 0.4);
-      border-radius: 2px;
-      backdrop-filter: blur(2px);
-    }
-
-    .widget-heading {
-      font-family: var(--font-masthead);
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--text-main);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      border-bottom: 1px solid var(--border-soft);
-      padding-bottom: 8px;
-    }
-
-    /* Surprise Me Glamour Box */
-    .surprise-glam {
-      background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
-      border: 2px dashed var(--rose-primary);
-      border-radius: 16px;
-    }
-
-    /* Modal Styling */
-    .modal-overlay {
+    /* Modal for Connecting Live Google Sheet */
+    .modal-backdrop {
       display: none;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(21, 16, 25, 0.65);
-      backdrop-filter: blur(6px);
-      z-index: 1000;
+      background: rgba(30, 15, 25, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 2000;
       align-items: center;
       justify-content: center;
     }
 
-    .modal-overlay.active {
+    .modal-backdrop.active {
       display: flex;
     }
 
-    .modal-card {
+    .modal-planner-card {
       background: var(--bg-card);
-      border: 2px solid var(--border-accent);
+      border: 2px solid var(--border-pink);
+      border-radius: 24px;
       width: 90%;
       max-width: 580px;
       padding: 32px;
-      border-radius: 20px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      position: relative;
     }
 
     .modal-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--border-soft);
+      border-bottom: 1.5px dashed var(--border-pink);
       padding-bottom: 14px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .modal-header h3 {
-      font-family: var(--font-masthead);
-      font-size: 24px;
-      color: var(--text-main);
+      font-family: var(--font-headline);
+      font-size: 22px;
+      color: var(--rose-deep);
     }
 
-    .close-btn {
+    .modal-close-btn {
       background: transparent;
       border: none;
-      font-size: 24px;
+      font-size: 26px;
       cursor: pointer;
       color: var(--text-muted);
     }
 
-    .input-group {
-      margin-bottom: 20px;
+    .input-row {
+      margin-bottom: 18px;
     }
 
-    .input-group label {
+    .input-row label {
       display: block;
-      font-family: var(--font-sans);
       font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
@@ -656,11 +713,11 @@
       color: var(--text-main);
     }
 
-    .input-group input {
+    .input-row input {
       width: 100%;
-      padding: 11px 14px;
-      background: var(--bg-page);
-      border: 1px solid var(--border-accent);
+      padding: 10px 14px;
+      background: var(--bg-soft-pink);
+      border: 1px solid var(--border-pink);
       border-radius: 10px;
       font-family: var(--font-sans);
       font-size: 13px;
@@ -668,201 +725,178 @@
       outline: none;
     }
 
-    .input-group input:focus {
-      border-color: var(--rose-primary);
-      box-shadow: 0 0 0 3px rgba(217, 119, 143, 0.2);
-    }
-
-    .input-help {
-      font-family: var(--font-sans);
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 6px;
-      line-height: 1.45;
+    .input-row input:focus {
+      border-color: var(--rose-accent);
+      box-shadow: 0 0 0 3px rgba(200, 75, 113, 0.15);
     }
 
     .modal-footer {
       display: flex;
       justify-content: flex-end;
       gap: 12px;
-      margin-top: 26px;
+      margin-top: 24px;
     }
 
-    .btn-save {
-      background: var(--rose-primary);
-      color: #ffffff;
+    .btn-save-sheet {
+      background: var(--rose-accent);
+      color: #fff;
       border: none;
-      padding: 10px 22px;
-      border-radius: 24px;
-      font-family: var(--font-sans);
+      padding: 10px 20px;
+      border-radius: 20px;
       font-size: 13px;
       font-weight: 700;
       cursor: pointer;
-      transition: all 0.2s;
     }
 
-    .btn-save:hover {
+    .btn-save-sheet:hover {
       background: var(--rose-deep);
-      transform: translateY(-1px);
-    }
-
-    .btn-cancel {
-      background: transparent;
-      border: 1px solid var(--border-soft);
-      color: var(--text-main);
-      padding: 10px 18px;
-      border-radius: 24px;
-      font-family: var(--font-sans);
-      font-size: 13px;
-      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Chic Top Utility Bar -->
-    <header class="top-journal-bar">
-      <div class="status-badge">
+  <div class="planner-wrapper">
+    <div class="sakura-corner-tl">🌸</div>
+    <div class="sakura-corner-tr">🌸</div>
+
+    <!-- Top Utility Bar -->
+    <header class="planner-nav">
+      <div class="status-pill">
         <span class="sparkle-dot"></span>
-        <span id="edition-status">Automated Midnight Refresh: 12:00 AM IST</span>
+        <span id="edition-status">Live Google Sheet Sync • Midnight Overwrite: 12:00 AM IST</span>
       </div>
-      <div class="top-actions">
-        <button class="btn-chic" id="theme-btn" onclick="cycleTheme()">
+      <div class="nav-buttons">
+        <button class="btn-pill" id="theme-btn" onclick="toggleTheme()">
           <span id="theme-icon">🌙</span> <span id="theme-label">Midnight Noir</span>
         </button>
-        <button class="btn-chic" onclick="openSettingsModal()">
-          <span>🎀</span> Connect Live Sheet
+        <button class="btn-pill" onclick="openModal()">
+          <span>🎀</span> Connect Google Sheet
         </button>
       </div>
     </header>
 
-    <!-- Masthead -->
-    <div class="masthead-journal">
-      <div class="masthead-ribbon">
-        <span>✨</span> Private Intelligence & Strategic Briefing <span>✨</span>
+    <!-- Masthead styled to image_2ed9b9.jpg -->
+    <div class="planner-masthead">
+      <div class="planner-title-row">
+        <h1 class="planner-title">Daily Planner</h1>
+        <span class="puffy-heart-bow">🎀</span>
       </div>
-      <h1>The Executive Journal</h1>
-      <div class="masthead-subline">Curated Daily Intelligence for Enterprise, Markets & Frontier AI</div>
-      
-      <div class="masthead-dates-bar">
-        <div>Vol. I • Issue 10.26</div>
-        <div id="current-date-str">Sunday, October 11, 2026</div>
-        <div>Bengaluru / Kolkata Edition</div>
-        <div>High-Signal Digest</div>
+      <div class="planner-subhead">Executive Intelligence Memo • 3-Column Edition</div>
+    </div>
+
+    <!-- Interactive Planner Dashboard (Mood, Day, Weather, Water) -->
+    <div class="planner-dashboard-grid">
+      <!-- Mood Box -->
+      <div class="dash-box">
+        <div class="dash-box-bow">🎀</div>
+        <div class="dash-box-label">Mood</div>
+        <div class="mood-selector" id="mood-selector">
+          <span class="mood-item active" onclick="setMood(this, '😄')">😄</span>
+          <span class="mood-item" onclick="setMood(this, '😊')">😊</span>
+          <span class="mood-item" onclick="setMood(this, '😐')">😐</span>
+          <span class="mood-item" onclick="setMood(this, '🙁')">🙁</span>
+          <span class="mood-item" onclick="setMood(this, '😫')">😫</span>
+        </div>
+      </div>
+
+      <!-- Date & Day of Week -->
+      <div class="dash-box">
+        <div class="dash-box-bow">🎀</div>
+        <div class="date-day-pills">
+          <div class="current-date-text" id="display-date">Sunday, Oct 11, 2026</div>
+          <div class="day-pills">
+            <span class="day-pill" onclick="setDay(this)">M</span>
+            <span class="day-pill" onclick="setDay(this)">T</span>
+            <span class="day-pill" onclick="setDay(this)">W</span>
+            <span class="day-pill" onclick="setDay(this)">T</span>
+            <span class="day-pill" onclick="setDay(this)">F</span>
+            <span class="day-pill" onclick="setDay(this)">S</span>
+            <span class="day-pill active" onclick="setDay(this)">S</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather & Water Tracker -->
+      <div class="dash-box">
+        <div class="dash-box-bow">🎀</div>
+        <div class="weather-water-row">
+          <div>
+            <div style="font-size: 11px; font-weight: 800; color: var(--rose-deep); margin-bottom: 4px;">WEATHER</div>
+            <div class="weather-icons">
+              <span class="weather-item active" onclick="setWeather(this)">⛅</span>
+              <span class="weather-item" onclick="setWeather(this)">☀️</span>
+              <span class="weather-item" onclick="setWeather(this)">🌧️</span>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 11px; font-weight: 800; color: var(--rose-deep); margin-bottom: 4px;">WATER / MATCHA</div>
+            <div class="water-drops" id="water-drops">
+              <span class="water-drop filled" onclick="toggleWater(this)">💧</span>
+              <span class="water-drop filled" onclick="toggleWater(this)">💧</span>
+              <span class="water-drop filled" onclick="toggleWater(this)">💧</span>
+              <span class="water-drop" onclick="toggleWater(this)">💧</span>
+              <span class="water-drop" onclick="toggleWater(this)">💧</span>
+              <span class="water-drop" onclick="toggleWater(this)">💧</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Category Carousel Ribbons & Search -->
-    <div class="controls-journal">
-      <div class="pill-carousel" id="category-pills">
-        <button class="filter-bow active" onclick="filterCategory('All')">🎀 All Intelligence</button>
-        <button class="filter-bow" onclick="filterCategory('Indian Politics')">🏛️ Indian Politics</button>
-        <button class="filter-bow" onclick="filterCategory('Global Geopolitics')">🌐 Geopolitics</button>
-        <button class="filter-bow" onclick="filterCategory('Finance & Taxes')">📊 Finance & Taxes</button>
-        <button class="filter-bow" onclick="filterCategory('Financial Jargon')">☕ Jargon Demystified</button>
-        <button class="filter-bow" onclick="filterCategory('Career Impact')">💼 Career Strategy</button>
-        <button class="filter-bow" onclick="filterCategory('Biochem & Tech Research')">✨ Biochem Research</button>
-        <button class="filter-bow" onclick="filterCategory('Deep Tech')">🔬 Deep Tech</button>
-        <button class="filter-bow" onclick="filterCategory('Enterprise Tech')">🏢 Enterprise Systems</button>
-        <button class="filter-bow" onclick="filterCategory('Microsoft & Copilot Studio')">💻 Microsoft & Copilot</button>
-        <button class="filter-bow" onclick="filterCategory('Surprise Me')">🌸 Surprise Me</button>
+    <!-- Daily Reflection / Strategic Affirmation Banner -->
+    <div class="daily-reflection-banner">
+      <div class="reflection-quote">
+        <span>✨</span>
+        <span id="strategic-intent">"Precision in architecture, discipline in execution. Build systems that compound."</span>
       </div>
+      <a href="https://docs.google.com/spreadsheets/d/1X8pT8HQ6knoCl-_baF6qEtl51d2y2YlYoYZ1EVl2fcw/edit" target="_blank" class="btn-sync-sheet">
+        <span>📊</span> Open Live Google Excel
+      </a>
+    </div>
 
-      <div class="search-chic">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search memos, jargon, research..." oninput="handleSearch()">
+    <!-- Category Ribbons Filter & Search -->
+    <div class="category-ribbons">
+      <div class="ribbon-pills" id="category-pills">
+        <!-- Rendered by JavaScript -->
+      </div>
+      <div class="search-input-box">
+        <input type="text" id="search-box" placeholder="🔍 Search topics or papers..." oninput="handleSearch()">
       </div>
     </div>
 
-    <!-- Newspaper & Journal Layout -->
-    <main class="journal-layout">
-      <!-- Main Content Feed -->
-      <section class="main-column">
-        <!-- Lead Executive Story -->
-        <article class="lead-journal-card" id="lead-story-container">
-          <!-- Populated by JavaScript -->
-        </article>
-
-        <!-- Grid of Stories -->
-        <div class="stories-feed" id="stories-grid">
-          <!-- Populated by JavaScript -->
-        </div>
-      </section>
-
-      <!-- Editorial Sidebar -->
-      <aside class="journal-sidebar">
-        <!-- Surprise Me Box -->
-        <div class="polaroid-widget surprise-glam" id="surprise-widget">
-          <div class="washi-tape"></div>
-          <div class="widget-heading">
-            <span>🌸</span> Experimental Wonder
-          </div>
-          <div id="surprise-content">
-            <!-- Populated by JavaScript -->
-          </div>
-        </div>
-
-        <!-- Daily Financial & Strategic Jargon Memo -->
-        <div class="polaroid-widget">
-          <div class="washi-tape"></div>
-          <div class="widget-heading">
-            <span>☕</span> Strategic Jargon Cheat-Sheet
-          </div>
-          <div style="font-family: var(--font-sans); font-size: 13px; line-height: 1.6;">
-            <p><strong>PEG Ratio &lt; 1.0:</strong> Demonstrates that forward enterprise growth is mathematically underpriced by the market.</p>
-            <hr style="margin: 10px 0; border: none; border-top: 1px dashed var(--border-soft);">
-            <p><strong>LTCG Harvesting:</strong> Annual statutory liquidation up to ₹1.25L tax-exempt equity profit to reset cost basis.</p>
-            <hr style="margin: 10px 0; border: none; border-top: 1px dashed var(--border-soft);">
-            <p><strong>Free Cash Flow (FCF):</strong> Unencumbered liquid capital remaining after operating and capital expenditures.</p>
-          </div>
-        </div>
-
-        <!-- Weekly Feedback & Editorial Alignment -->
-        <div class="polaroid-widget">
-          <div class="washi-tape"></div>
-          <div class="widget-heading">
-            <span>💌</span> Weekly Feedback Sync
-          </div>
-          <p style="font-size: 15px; margin-bottom: 12px;">
-            Every Sunday at <strong>8:00 PM IST</strong>, our automated feedback schedule initiates to calibrate topic weightings and language depth.
-          </p>
-          <div style="font-family: var(--font-sans); font-size: 12px; color: var(--rose-deep); background: var(--cream-tag); padding: 9px 12px; border-radius: 8px; border: 1px solid var(--border-soft);">
-            📌 Tracked in your <a href="https://keep.google.com/?note=1UMGKn_NxjFN7U27XcpnTLPuUxw6VnnPfkQ04RNnIyQumnz0BytFTABtmqjjaNw" target="_blank" style="color: var(--rose-deep); font-weight: 700; text-decoration: underline;">Google Keep Editorial Note</a>
-          </div>
-        </div>
-      </aside>
+    <!-- 3 IN A ROW CARDS GRID -->
+    <main class="planner-cards-grid" id="cards-grid">
+      <!-- Populated dynamically by JavaScript -->
     </main>
   </div>
 
-  <!-- Settings Modal for Google Sheet URL / File Upload -->
-  <div class="modal-overlay" id="settings-modal" onclick="if(event.target===this) closeSettingsModal()">
-    <div class="modal-card">
+  <!-- Connect Google Sheet Modal -->
+  <div class="modal-backdrop" id="modal-backdrop" onclick="if(event.target===this) closeModal()">
+    <div class="modal-planner-card">
       <div class="modal-header">
-        <h3>Connect Your Live Excel / Google Sheet</h3>
-        <button class="close-btn" onclick="closeSettingsModal()">&times;</button>
+        <h3>Connect Live Google Sheet</h3>
+        <button class="modal-close-btn" onclick="closeModal()">&times;</button>
       </div>
-      <div class="input-group">
+
+      <div class="input-row">
         <label>Google Sheet Published CSV URL</label>
-        <input type="url" id="sheet-csv-url" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?output=csv">
-        <p class="input-help">
-          In your Google Sheet, select <strong>File &gt; Share &gt; Publish to web</strong>. Choose <em>Entire Document</em> (or Sheet 1) with <strong>CSV</strong> format. Paste the link here to synchronize live.
+        <input type="url" id="sheet-url-input" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?output=csv">
+        <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">
+          In your Google Sheet, select <strong>File &gt; Share &gt; Publish to web</strong>. Select <strong>Daily Intelligence Feed</strong> tab and choose <strong>CSV</strong>.
         </p>
       </div>
 
-      <div class="input-group">
-        <label>Or Upload Today's Excel (.xlsx) / CSV File</label>
-        <input type="file" id="file-uploader" accept=".csv,.xlsx,.json" onchange="handleFileUpload(event)">
-        <p class="input-help">Upload an updated daily workbook directly from your computer.</p>
+      <div class="input-row">
+        <label>Or Upload Today's Excel File</label>
+        <input type="file" id="excel-file-input" accept=".xlsx,.csv,.json" onchange="handleFile(event)">
       </div>
 
       <div class="modal-footer">
-        <button class="btn-cancel" onclick="resetToSampleData()">Reset to Bundled Edition</button>
-        <button class="btn-save" onclick="saveSheetSettings()">Save & Sync Feed</button>
+        <button class="btn-pill" onclick="resetToSample()">Reset Sample</button>
+        <button class="btn-save-sheet" onclick="saveSheetUrl()">Save & Sync Feed</button>
       </div>
     </div>
   </div>
 
-  <!-- SheetJS for local Excel parsing -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
   <script>
@@ -871,13 +905,13 @@
     "id": "pol-1",
     "category": "Indian Politics",
     "category_badge": "\ud83c\udfdb\ufe0f Supreme Court & CJI",
-    "headline": "Supreme Court Bench Led by CJI Issues Directives on Workplace Safety & Institutional Audit Protocols",
+    "headline": "Supreme Court Bench Led by CJI Issues Binding Directives on Workplace Safety & Institutional Audit Protocols",
     "read_time": "4 min",
-    "in_short": "A multi-judge bench of the Supreme Court of India, presided over by the Chief Justice of India, has formalized mandatory institutional security norms, CCTV coverage standards, and gender-safety audits across state and central institutions.",
-    "in_detail": "Following nationwide legal deliberations concerning the safety of women professionals and healthcare workers, the Supreme Court has issued binding operational mandates:\n\n1. Institutional Compliance & Auditing:\n   The court instructed states to establish designated security perimeters, biometric access controls in high-risk zones, and continuous CCTV surveillance with tamper-proof audit trails. Non-compliance by institutional heads will be treated as regulatory dereliction of duty.\n\n2. The National Task Force (NTF) Framework:\n   The court-mandated task force submitted structured safety guidelines encompassing emergency distress buttons, secure on-call duty rooms, and streamlined Internal Complaints Committees (ICC) under the POSH framework.\n\n3. Neutral Cross-Verification & Legal Significance:\n   Factual reports confirmed by Supreme Court registry filings, Press Information Bureau (PIB) releases, and legal journals (LiveLaw, Bar & Bench) emphasize that the bench underscored fundamental constitutional rights under Article 21, asserting that personal safety and dignified working conditions are non-negotiable prerequisites for workforce participation.",
+    "in_short": "A multi-judge bench of the Supreme Court of India, presided over by the Chief Justice of India, has formalized mandatory institutional security norms, CCTV perimeter standards, and gender-safety audits across state and central institutions.",
+    "in_detail": "Following nationwide legal deliberations concerning the safety of women professionals and healthcare workers, the Supreme Court has issued binding operational mandates:\n\n1. Institutional Compliance & Auditing:\n   The court instructed state administrations to establish designated security perimeters, biometric access controls in high-risk zones, and continuous CCTV surveillance with tamper-proof audit trails. Non-compliance by institutional heads will be treated as regulatory dereliction of duty.\n\n2. The National Task Force (NTF) Framework:\n   The court-mandated task force submitted structured safety guidelines encompassing emergency distress buttons, secure duty rooms, and streamlined Internal Complaints Committees (ICC) under the POSH framework.\n\n3. Objective Multi-Source Analysis:\n   Factual reports confirmed by Supreme Court registry filings, Press Information Bureau (PIB) releases, and legal journals (LiveLaw, Bar & Bench) emphasize that the bench underscored fundamental constitutional rights under Article 21, asserting that personal safety and dignified working conditions are non-negotiable prerequisites for workforce participation.",
     "links": [
       {
-        "title": "Supreme Court of India Official Orders",
+        "title": "Supreme Court Official Orders",
         "url": "https://main.sci.gov.in/"
       },
       {
@@ -885,7 +919,7 @@
         "url": "https://www.barandbench.com/"
       },
       {
-        "title": "Press Information Bureau (PIB)",
+        "title": "PIB Press Briefing",
         "url": "https://pib.gov.in/"
       }
     ]
@@ -897,7 +931,7 @@
     "headline": "Parliament Legislative Session: Standing Committee Scrutiny on Criminal Law Amendments & Public Safety",
     "read_time": "4 min",
     "in_short": "Parliamentary committees have advanced legislative reviews assessing statutory enforcement under the Bharatiya Nyaya Sanhita (BNS), focusing on fast-track court timelines, forensic evidentiary mandates, and institutional accountability.",
-    "in_detail": "The legislative agenda in Parliament continues to center on modernizing judicial procedures and accelerating trial adjudication:\n\n1. Forensic Collection Mandates:\n   Under newly operationalized statutory provisions, mandatory forensic videography and zero-FIR registration protocols are being rigorously monitored across state directorates of prosecution.\n\n2. Fast-Track Special Courts (FTSCs):\n   Standing committee evaluations revealed that over 750 Fast-Track Special Courts require enhanced judicial infrastructure to clear pending trial backlogs within the statutory 60-day inquiry window.\n\n3. Objective Multi-Source Analysis:\n   Cross-referencing PRS Legislative Research and Ministry of Law & Justice updates demonstrates broad legislative consensus on punitive deterrence, alongside persistent operational calls for increased forensic laboratory capacity across regional jurisdictions.",
+    "in_detail": "The legislative agenda in Parliament continues to center on modernizing judicial procedures and accelerating trial adjudication:\n\n1. Forensic Collection Mandates:\n   Under newly operationalized statutory provisions, mandatory forensic videography and zero-FIR registration protocols are being rigorously monitored across state directorates of prosecution.\n\n2. Fast-Track Special Courts (FTSCs):\n   Standing committee evaluations revealed that over 750 Fast-Track Special Courts require enhanced judicial infrastructure to clear pending trial backlogs within the statutory 60-day inquiry window.\n\n3. Multi-Source Legislative Review:\n   Cross-referencing PRS Legislative Research and Ministry of Law & Justice updates demonstrates broad legislative consensus on punitive deterrence, alongside persistent operational calls for increased forensic laboratory capacity across regional jurisdictions.",
     "links": [
       {
         "title": "PRS Legislative Research Tracker",
@@ -916,7 +950,7 @@
     "headline": "Digital Personal Data Protection (DPDP) Rules: Enterprise Governance & IT Mandates",
     "read_time": "3 min",
     "in_short": "The Ministry of Electronics and Information Technology has operationalized core compliance directives under the DPDP Act, mandating auditable consent orchestration, data fiduciary audits, and 6-hour incident disclosure windows.",
-    "in_detail": "For technology leaders and engineering professionals in India's Global Capability Centers (GCCs), data privacy is no longer merely a legal checkmark\u2014it is now a runtime architectural requirement.\n\n1. Architectural Re-engineering:\n   Enterprises can no longer aggregate unbundled consent across disparate services. Architecture teams must decouple user identity management and implement granular 'Consent-as-Code' middleware.\n\n2. Cross-Border Restrictions & Fiduciary Liability:\n   Strict regulatory scrutiny now applies to multi-region data pipelines. Non-compliance exposes fiduciaries to statutory financial penalties reaching \u20b9250 Crore per infraction.\n\n3. Strategic & Career Implications:\n   Data Governance Architects and Privacy Compliance Specialists are experiencing elevated talent demand across tier-1 technology hubs.",
+    "in_detail": "For technology leaders and engineering professionals in India's Global Capability Centers (GCCs), data privacy is no longer merely a legal checkmark\u2014it is now a runtime architectural requirement.\n\n1. Architectural Re-engineering:\n   Enterprises can no longer aggregate unbundled consent across disparate services. Architecture teams must decouple user identity management and implement granular 'Consent-as-Code' middleware.\n\n2. Cross-Border Restrictions & Fiduciary Liability:\n   Strict regulatory scrutiny now applies to multi-region data pipelines. Non-compliance exposes fiduciaries to statutory financial penalties reaching \u20b9250 Crore per infraction.\n\n3. Strategic & Career Implications:\n   Data Governance Architects and Privacy Compliance Specialists are experiencing elevated talent demand across tier-1 technology hubs in Bengaluru, Hyderabad, and Pune.",
     "links": [
       {
         "title": "MeitY DPDP Regulatory Portal",
@@ -935,7 +969,7 @@
     "headline": "Critical Minerals & The Semiconductor Corridor: Mitigating Single-Point Supply Chain Vulnerabilities",
     "read_time": "4 min",
     "in_short": "Multilateral frameworks under the US-India Initiative on Critical and Emerging Technologies (iCET) and the Minerals Security Network are accelerating strategic capital deployment into upstream mineral refining and advanced semiconductor packaging.",
-    "in_detail": "The geopolitical equilibrium of the next decade is governed not by software monopolies alone, but by physical choke points across the semiconductor value chain.\n\n1. Upstream Choke Points:\n   Over 75% of global rare-earth refining remains geographically concentrated. Bilateral agreements under iCET seek to de-risk this exposure by co-financing domestic refining capabilities and subsidizing OSAT facilities across Gujarat and Assam.\n\n2. Strategic Supply Chain Redundancy:\n   While Western nations have heavily incentivized domestic fabrication, physical wafers remain dependent on precursor chemical logistics. Any unilateral export moratorium on germanium or gallium severely inflates hardware procurement lead times.\n\n3. Engineering & Capital Allocation Strategy:\n   Hardware co-design, VLSI physical verification, and low-level firmware optimization are experiencing a major enterprise renaissance.",
+    "in_detail": "The geopolitical equilibrium of the next decade is governed not by software monopolies alone, but by physical choke points across the semiconductor value chain.\n\n1. Upstream Choke Points:\n   Over 75% of global rare-earth refining remains geographically concentrated. Bilateral agreements under iCET seek to de-risk this exposure by co-financing domestic refining capabilities and subsidizing OSAT facilities across Gujarat and Assam.\n\n2. Strategic Supply Chain Redundancy:\n   While Western nations have heavily subsidized domestic fabrication (TSMC Arizona, Intel Ohio), physical wafers remain dependent on precursor chemical logistics. Any unilateral export moratorium on germanium or gallium severely inflates hardware procurement lead times.\n\n3. Engineering & Capital Allocation Strategy:\n   Hardware co-design, VLSI physical verification, and low-level firmware optimization are experiencing an enterprise renaissance.",
     "links": [
       {
         "title": "US State Dept iCET Strategic Factsheet",
@@ -954,7 +988,7 @@
     "headline": "Personal Capital Optimization: Tax Regime Arbitrage & Equity Capital Gains Harvesting",
     "read_time": "4 min",
     "in_short": "For salaried technology executives earning above \u20b915 LPA, structural revisions in statutory tax slabs favor the New Tax Regime, while the revised 12.5% LTCG threshold necessitates an active year-end capital gains harvesting strategy.",
-    "in_detail": "Preserving earned income requires deliberate fiscal architecture:\n\n1. The Regime Arbitrage Calculation:\n   The New Tax Regime provides reduced marginal brackets and an enhanced standard deduction of \u20b975,000. Unless your aggregate verifiable deductions substantively exceed \u20b94.25 Lakhs, electing the New Regime yields mathematically superior net cash flow.\n\n2. Equity Taxation Mechanics (LTCG vs. STCG):\n   - Long-Term Capital Gains (LTCG): Gains realized on domestic equity held beyond 12 months are subject to a 12.5% statutory rate on amounts exceeding the annual \u20b91.25 Lakh exemption limit.\n   - Short-Term Capital Gains (STCG): Positions liquidated within 12 months incur a 20% tax penalty.\n\n3. Systematic Tax Harvesting Protocol:\n   Every financial year before March 31st, strategically liquidate profitable mutual fund units up to precisely \u20b91.25 Lakhs of realized profit, immediately repurchasing equivalent assets to step up your cost basis tax-free.",
+    "in_detail": "Preserving earned income requires deliberate fiscal architecture:\n\n1. The Regime Arbitrage Calculation:\n   The New Tax Regime provides reduced marginal brackets and an enhanced standard deduction of \u20b975,000. Unless your aggregate verifiable deductions substantively exceed \u20b94.25 Lakhs, electing the New Regime yields mathematically superior net cash flow.\n\n2. Equity Taxation Mechanics (LTCG vs. STCG):\n   - Long-Term Capital Gains (LTCG): Gains realized on domestic equity held beyond 12 months are subject to a 12.5% statutory rate on amounts exceeding the annual \u20b91.25 Lakh exemption limit.\n   - Short-Term Capital Gains (STCG): Positions liquidated within 12 months incur a 20% tax penalty.\n\n3. Systematic Tax Harvesting Protocol:\n   Every financial year before March 31st, strategically liquidate profitable mutual fund units up to precisely \u20b91.25 Lakhs of realized profit, immediately repurchasing equivalent assets to step up your cost acquisition basis tax-free.",
     "links": [
       {
         "title": "Income Tax Department of India",
@@ -1113,192 +1147,153 @@
     let searchQuery = '';
 
     document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('journal_theme') || 'blush';
+      const savedTheme = localStorage.getItem('planner_theme') || 'blush';
       applyTheme(savedTheme);
 
-      const savedCsvUrl = localStorage.getItem('journal_csv_url');
-      if (savedCsvUrl) {
-        document.getElementById('sheet-csv-url').value = savedCsvUrl;
-        fetchGoogleSheetData(savedCsvUrl);
+      const savedUrl = localStorage.getItem('planner_csv_url');
+      if (savedUrl) {
+        document.getElementById('sheet-url-input').value = savedUrl;
+        fetchLiveSheet(savedUrl);
       } else {
-        renderJournal();
-        updateCategoryPillsCount();
+        renderCards();
+        renderPills();
       }
     });
 
-    // Theme Management
-    function cycleTheme() {
+    // Theme Toggle
+    function toggleTheme() {
       const current = document.documentElement.getAttribute('data-theme') || 'blush';
-      let next = 'noir';
-      if (current === 'blush') next = 'noir';
-      else if (current === 'noir') next = 'matcha';
-      else next = 'blush';
+      const next = current === 'blush' ? 'noir' : 'blush';
       applyTheme(next);
     }
 
     function applyTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
-      localStorage.setItem('journal_theme', theme);
+      localStorage.setItem('planner_theme', theme);
       const icon = document.getElementById('theme-icon');
       const label = document.getElementById('theme-label');
       if (theme === 'noir') {
-        icon.textContent = '🍵';
-        label.textContent = 'Matcha Cream';
-      } else if (theme === 'matcha') {
         icon.textContent = '🌸';
-        label.textContent = 'Rose Quartz';
+        label.textContent = 'Blush Paper';
       } else {
         icon.textContent = '🌙';
         label.textContent = 'Midnight Noir';
       }
     }
 
-    
-    function updateCategoryPillsCount() {
+    // Interactive Dashboard Widgets
+    function setMood(el, mood) {
+      document.querySelectorAll('.mood-item').forEach(m => m.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    function setDay(el) {
+      document.querySelectorAll('.day-pill').forEach(d => d.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    function setWeather(el) {
+      document.querySelectorAll('.weather-item').forEach(w => w.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    function toggleWater(el) {
+      el.classList.toggle('filled');
+    }
+
+    // Filtering & Search
+    function filterCategory(cat) {
+      selectedCategory = cat;
+      renderCards();
+      renderPills();
+    }
+
+    function handleSearch() {
+      searchQuery = document.getElementById('search-box').value.toLowerCase().trim();
+      renderCards();
+    }
+
+    function renderPills() {
       const counts = {};
       currentArticles.forEach(a => {
         counts[a.category] = (counts[a.category] || 0) + 1;
       });
       const total = currentArticles.length;
-      
-      const pillsContainer = document.getElementById("category-pills");
-      if (!pillsContainer) return;
-      
-      const cats = [
-        { name: "All", label: "🎀 All Intelligence", count: total },
-        { name: "Indian Politics", label: "🏛️ Indian Politics", count: counts["Indian Politics"] || 0 },
-        { name: "Global Geopolitics", label: "🌐 Geopolitics", count: counts["Global Geopolitics"] || 0 },
-        { name: "Finance & Taxes", label: "📊 Finance & Taxes", count: counts["Finance & Taxes"] || 0 },
-        { name: "Financial Jargon", label: "☕ Jargon Demystified", count: counts["Financial Jargon"] || 0 },
-        { name: "Career Impact", label: "💼 Career Strategy", count: counts["Career Impact"] || 0 },
-        { name: "Biochem & Tech Research", label: "✨ Biochem Research", count: counts["Biochem & Tech Research"] || 0 },
-        { name: "Deep Tech", label: "🔬 Deep Tech", count: counts["Deep Tech"] || 0 },
-        { name: "Enterprise Tech", label: "🏢 Enterprise Systems", count: counts["Enterprise Tech"] || 0 },
-        { name: "Microsoft & Copilot Studio", label: "💻 Microsoft & Copilot", count: counts["Microsoft & Copilot Studio"] || 0 },
-        { name: "Surprise Me", label: "🌸 Surprise Me", count: counts["Surprise Me"] || 0 }
+
+      const categories = [
+        { name: 'All', label: '🎀 All', count: total },
+        { name: 'Indian Politics', label: '🏛️ Indian Politics', count: counts['Indian Politics'] || 0 },
+        { name: 'Global Geopolitics', label: '🌐 Geopolitics', count: counts['Global Geopolitics'] || 0 },
+        { name: 'Finance & Taxes', label: '📊 Finance & Taxes', count: counts['Finance & Taxes'] || 0 },
+        { name: 'Financial Jargon', label: '☕ Jargon', count: counts['Financial Jargon'] || 0 },
+        { name: 'Career Impact', label: '💼 Career', count: counts['Career Impact'] || 0 },
+        { name: 'Biochem & Tech Research', label: '✨ Biochem', count: counts['Biochem & Tech Research'] || 0 },
+        { name: 'Deep Tech', label: '🔬 Deep Tech', count: counts['Deep Tech'] || 0 },
+        { name: 'Enterprise Tech', label: '🏢 Enterprise', count: counts['Enterprise Tech'] || 0 },
+        { name: 'Microsoft & Copilot Studio', label: '💻 Microsoft', count: counts['Microsoft & Copilot Studio'] || 0 },
+        { name: 'Surprise Me', label: '🌸 Surprise Me', count: counts['Surprise Me'] || 0 }
       ];
 
-      pillsContainer.innerHTML = cats.map(c => `
-        <button class="filter-bow ${selectedCategory === c.name ? "active" : ""}" onclick="filterCategory('${c.name}')">
+      const container = document.getElementById('category-pills');
+      container.innerHTML = categories.map(c => `
+        <button class="filter-ribbon ${selectedCategory === c.name ? 'active' : ''}" onclick="filterCategory('${c.name}')">
           ${c.label} (${c.count})
         </button>
-      `).join("");
+      `).join('');
     }
 
-    function filterCategory(cat) {
-      selectedCategory = cat;
-      document.querySelectorAll('.filter-bow').forEach(btn => {
-        if (btn.textContent.includes(cat) || (cat === 'All' && btn.textContent.includes('All Intelligence'))) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-      });
-      renderJournal();
-      updateCategoryPillsCount();
-    }
+    // Render Cards in 3-in-a-Row Grid
+    function renderCards() {
+      const grid = document.getElementById('cards-grid');
 
-    function handleSearch() {
-      searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
-      renderJournal();
-      updateCategoryPillsCount();
-    }
-
-    function renderJournal() {
       let filtered = currentArticles.filter(item => {
-        const matchesCat = (selectedCategory === 'All' || item.category === selectedCategory);
-        const matchesQuery = !searchQuery || 
+        const matchCat = (selectedCategory === 'All' || item.category === selectedCategory);
+        const matchQuery = !searchQuery ||
           item.headline.toLowerCase().includes(searchQuery) ||
           item.in_short.toLowerCase().includes(searchQuery) ||
           item.in_detail.toLowerCase().includes(searchQuery) ||
           item.category.toLowerCase().includes(searchQuery);
-        return matchesCat && matchesQuery;
+        return matchCat && matchQuery;
       });
 
-      const surpriseItem = currentArticles.find(i => i.category === 'Surprise Me') || currentArticles[currentArticles.length - 1];
-      if (surpriseItem) {
-        renderSurpriseWidget(surpriseItem);
-      }
-
-      const leadContainer = document.getElementById('lead-story-container');
-      const gridContainer = document.getElementById('stories-grid');
-
       if (filtered.length === 0) {
-        leadContainer.style.display = 'none';
-        gridContainer.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 48px; color: var(--text-muted); font-family: var(--font-sans); font-size: 14px;">No intelligence memos found matching your query.</div>';
+        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 48px; font-size: 15px; color: var(--text-muted);">No intelligence memos recorded for this section today.</div>';
         return;
       }
 
-      leadContainer.style.display = 'block';
-      const lead = filtered[0];
-      const remaining = filtered.slice(1);
-
-      // Render Lead Story with 3 Mandatory Sections
-      leadContainer.innerHTML = `
-        <div class="lead-meta">
-          <span class="badge-ribbon">${lead.category_badge || lead.category}</span>
-          <span style="color: var(--text-muted); font-size: 11px;">Executive Dossier • ${lead.read_time || '4 min'}</span>
-        </div>
-        <h2 class="lead-title">${lead.headline}</h2>
-        
-        <!-- Mandatory Section 1: In Short -->
-        <div class="box-in-short">
-          <div class="label-in-short">⚡ In Short</div>
-          <div>${lead.in_short}</div>
-        </div>
-
-        <!-- Mandatory Section 2: In Detail Breakdown -->
-        <div class="box-in-detail">
-          <button class="detail-accordion-btn" onclick="toggleDetail('lead-${lead.id}')">
-            <span>📖 In Detail Breakdown & Strategic Impact</span>
-            <span id="icon-lead-${lead.id}">▼</span>
-          </button>
-          <div class="detail-body open" id="content-lead-${lead.id}">
-            ${lead.in_detail}
-          </div>
-        </div>
-
-        <!-- Mandatory Section 3: Links -->
-        <div class="box-links">
-          <div class="label-links">🔗 Verified Sources & Technical Papers:</div>
-          <div class="links-chip-group">
-            ${renderLinks(lead.links)}
-          </div>
-        </div>
-      `;
-
-      // Render Remaining Stories
-      gridContainer.innerHTML = remaining.map(item => `
-        <article class="story-journal-entry">
+      grid.innerHTML = filtered.map(item => `
+        <article class="journal-entry-card">
+          <div class="card-top-bow">🎀</div>
           <div>
-            <div class="entry-header">
-              <span class="entry-badge">${item.category_badge || item.category}</span>
-              <span class="entry-readtime">${item.read_time || '3 min'}</span>
+            <div class="card-meta-header">
+              <span class="category-badge-chip">${item.category_badge || item.category}</span>
+              <span class="card-read-time">${item.read_time || '3 min'}</span>
             </div>
-            <h3 class="entry-headline">${item.headline}</h3>
+            
+            <h3 class="card-headline-title">${item.headline}</h3>
 
-            <!-- Mandatory Section 1: In Short -->
+            <!-- 1. IN SHORT -->
             <div class="box-in-short">
               <div class="label-in-short">⚡ In Short</div>
               <div>${item.in_short}</div>
             </div>
 
-            <!-- Mandatory Section 2: In Detail Breakdown -->
+            <!-- 2. IN DETAIL BREAKDOWN -->
             <div class="box-in-detail">
-              <button class="detail-accordion-btn" onclick="toggleDetail('${item.id}')">
+              <button class="accordion-toggle-btn" onclick="toggleAccordion('${item.id}')">
                 <span>📖 In Detail Breakdown</span>
-                <span id="icon-${item.id}">▼</span>
+                <span id="arrow-${item.id}">▼</span>
               </button>
-              <div class="detail-body" id="content-${item.id}">
+              <div class="accordion-content" id="detail-${item.id}">
                 ${item.in_detail}
               </div>
             </div>
           </div>
 
-          <!-- Mandatory Section 3: Links -->
-          <div class="box-links">
-            <div class="label-links">🔗 Technical Sources:</div>
-            <div class="links-chip-group">
+          <!-- 3. TECHNICAL SOURCES / LINKS -->
+          <div class="box-sources-links">
+            <div class="sources-title">🔗 Technical Sources:</div>
+            <div class="links-capsule-row">
               ${renderLinks(item.links)}
             </div>
           </div>
@@ -1306,85 +1301,68 @@
       `).join('');
     }
 
-    function renderSurpriseWidget(item) {
-      const container = document.getElementById('surprise-content');
-      container.innerHTML = `
-        <h4 style="font-family: var(--font-masthead); font-size: 18px; margin-bottom: 8px; color: var(--rose-deep);">${item.headline}</h4>
-        <div style="font-size: 15px; margin-bottom: 12px; line-height: 1.5;">${item.in_short}</div>
-        <button class="detail-accordion-btn" onclick="toggleDetail('surprise-${item.id}')">
-          <span>Explore Wonder & Mechanics</span>
-          <span id="icon-surprise-${item.id}">▼</span>
-        </button>
-        <div class="detail-body" id="content-surprise-${item.id}" style="font-size: 16px;">
-          ${item.in_detail}
-        </div>
-        <div style="margin-top: 12px;">
-          ${renderLinks(item.links)}
-        </div>
-      `;
-    }
-
     function renderLinks(links) {
-      if (!links || links.length === 0) return '<span style="font-size: 11px; color: var(--text-muted); font-family: var(--font-sans);">Direct source unattached</span>';
-      return links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="link-capsule">↗ ${l.title}</a>`).join('');
+      if (!links || links.length === 0) return '<span style="font-size: 11px; color: var(--text-muted);">Direct source unattached</span>';
+      return links.map(l => `<a href="${l.url}" target="_blank" rel="noopener noreferrer" class="source-capsule-link">↗ ${l.title}</a>`).join('');
     }
 
-    function toggleDetail(id) {
-      const content = document.getElementById(`content-${id}`);
-      const icon = document.getElementById(`icon-${id}`);
-      if (!content) return;
-      if (content.classList.contains('open')) {
-        content.classList.remove('open');
-        if (icon) icon.textContent = '▼';
+    function toggleAccordion(id) {
+      const el = document.getElementById(`detail-${id}`);
+      const arrow = document.getElementById(`arrow-${id}`);
+      if (!el) return;
+      if (el.classList.contains('open')) {
+        el.classList.remove('open');
+        if (arrow) arrow.textContent = '▼';
       } else {
-        content.classList.add('open');
-        if (icon) icon.textContent = '▲';
+        el.classList.add('open');
+        if (arrow) arrow.textContent = '▲';
       }
     }
 
-    // Sheet Sync Logic
-    function openSettingsModal() {
-      document.getElementById('settings-modal').classList.add('active');
+    // Modal & Google Sheet Sync
+    function openModal() {
+      document.getElementById('modal-backdrop').classList.add('active');
     }
 
-    function closeSettingsModal() {
-      document.getElementById('settings-modal').classList.remove('active');
+    function closeModal() {
+      document.getElementById('modal-backdrop').classList.remove('active');
     }
 
-    function saveSheetSettings() {
-      const url = document.getElementById('sheet-csv-url').value.trim();
+    function saveSheetUrl() {
+      const url = document.getElementById('sheet-url-input').value.trim();
       if (url) {
-        localStorage.setItem('journal_csv_url', url);
-        fetchGoogleSheetData(url);
+        localStorage.setItem('planner_csv_url', url);
+        fetchLiveSheet(url);
       }
-      closeSettingsModal();
+      closeModal();
     }
 
-    function resetToSampleData() {
-      localStorage.removeItem('journal_csv_url');
-      document.getElementById('sheet-csv-url').value = '';
+    function resetToSample() {
+      localStorage.removeItem('planner_csv_url');
+      document.getElementById('sheet-url-input').value = '';
       currentArticles = [...initialArticles];
-      document.getElementById('edition-status').textContent = 'Mode: Bundled Edition';
-      renderJournal();
-      closeSettingsModal();
+      document.getElementById('edition-status').textContent = 'Live Google Sheet Sync • Midnight Overwrite: 12:00 AM IST';
+      renderCards();
+      renderPills();
+      closeModal();
     }
 
-    async function fetchGoogleSheetData(url) {
+    async function fetchLiveSheet(url) {
       try {
         document.getElementById('edition-status').textContent = 'Syncing Live Google Sheet...';
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('Network error');
-        const text = await response.text();
-        parseCSVData(text);
-        document.getElementById('edition-status').textContent = 'Live Synced via Google Sheet';
+        const res = await fetch(url);
+        if (!res.ok) throw new Error('Fetch failed');
+        const text = await res.text();
+        parseCSV(text);
+        document.getElementById('edition-status').textContent = 'Live Connected: Google Sheet Feed';
       } catch (err) {
-        console.error('Failed to sync sheet:', err);
-        alert('Could not synchronize Google Sheet CSV. Please confirm publication permissions.');
+        console.error(err);
+        alert('Could not fetch published CSV. Please verify sheet permissions.');
         document.getElementById('edition-status').textContent = 'Mode: Bundled Edition';
       }
     }
 
-    function parseCSVData(csvText) {
+    function parseCSV(csvText) {
       const rows = [];
       let currentRow = [];
       let inQuotes = false;
@@ -1459,11 +1437,12 @@
 
       if (parsedArticles.length > 0) {
         currentArticles = parsedArticles;
-        renderJournal();
+        renderCards();
+        renderPills();
       }
     }
 
-    function handleFileUpload(event) {
+    function handleFile(event) {
       const file = event.target.files[0];
       if (!file) return;
 
@@ -1476,16 +1455,16 @@
           const workbook = XLSX.read(data, {type: 'array'});
           const firstSheet = workbook.SheetNames[0];
           const csv = XLSX.utils.sheet_to_csv(workbook.Sheets[firstSheet]);
-          parseCSVData(csv);
+          parseCSV(csv);
           document.getElementById('edition-status').textContent = `Uploaded: ${file.name}`;
-          closeSettingsModal();
+          closeModal();
         };
         reader.readAsArrayBuffer(file);
       } else if (ext === 'csv') {
         reader.onload = (e) => {
-          parseCSVData(e.target.result);
+          parseCSV(e.target.result);
           document.getElementById('edition-status').textContent = `Uploaded: ${file.name}`;
-          closeSettingsModal();
+          closeModal();
         };
         reader.readAsText(file);
       }
